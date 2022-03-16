@@ -1,0 +1,35 @@
+
+================================================================================================
+# 谷歌浏览器的下载
+
+	# 下载到本地安装
+
+		wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+		 
+		sudo apt install ./google-chrome-stable_current_amd64.deb
+		 
+		软件默认安装位置
+		/opt/google/chrome
+
+
+# 升级 Google Chrome
+
+	在安装过程中，官方 Google 软件源被添加到你的系统
+
+		cat /etc/apt/sources.list.d/google-chrome.list
+
+==================================================================================================
+# 命令行安装谷歌浏览器
+
+    终端输入
+    wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+    加入源 
+    sudo gedit /etc/apt/sources.list.d/google.list
+    粘贴
+    deb http://dl.google.com/linux/chrome/deb/ stable main
+    更新
+    sudo apt-get update
+    安装
+    sudo apt-get install google-chrome-stable
+    版本的更换 
+    sudo apt-get install google-chrome-stable
